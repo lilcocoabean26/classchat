@@ -116,7 +116,19 @@
         <ul>
             <h4>bug fixes</h4>
             <li>fixed bug where password protected usernames would have their message box stuck black</li>
-            <li>added turbowarp packager settings in root directory</li>
+        </ul>
+        <h3>v1.0.0</h3>
+        <ul>
+            <h4>additions</h4>
+            <li>added turbowarp packager settings to root directory</li>
+            <h4>changes</h4>
+            <li>password entry for pwp usernames is no longer a black box</li>
+            <li>banned all usernames containing "]|i" due to it breaking image handling</li>
+            <li>banned all usernames containing Unicode codepoints past u+ff</li>
+            <li>started replacing all cases of a no-break space (u+a0) with a typical space (u+20)</li>
+            <li>extended maximum username length to 50 characters</li>
+            <h4>bug fixes</h4>
+            <li>fixed typo where if your username was too short it would actually say it was too long</li>
         </ul>
     </body>
 </html>
